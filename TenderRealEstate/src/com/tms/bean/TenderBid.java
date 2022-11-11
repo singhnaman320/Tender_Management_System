@@ -1,11 +1,11 @@
 package com.tms.bean;
 
-public class Bid {
+public class TenderBid {
 
     private int bid;
     private int btid;
     private int amount;
-    private int status;
+    private String status;
 
     @Override
     public String toString() {
@@ -17,14 +17,14 @@ public class Bid {
                 '}';
     }
 
-    public Bid(int bid, int btid, int amount, int status) {
+    public TenderBid(int bid, int btid, int amount, String status) {
         this.bid = bid;
         this.btid = btid;
         this.amount = amount;
         this.status = status;
     }
 
-    public Bid() {
+    public TenderBid() {
         super();
     }
     public int getBid() {
@@ -51,11 +51,11 @@ public class Bid {
         this.amount = amount;
     }
 
-    public int getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 }

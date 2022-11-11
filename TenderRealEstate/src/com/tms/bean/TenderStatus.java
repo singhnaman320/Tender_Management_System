@@ -1,9 +1,9 @@
 package com.tms.bean;
 
-public class Status {
+public class TenderStatus {
 
-    private int venderiId;
-    private String venderName;
+    private int vendorId;
+    private String vendorName;
     private int tenderId;
     private String tenderName;
     private int tenderAmount;
@@ -12,21 +12,21 @@ public class Status {
     @Override
     public String toString() {
         return "Status{" +
-                "venderiId=" + venderiId +
-                ", venderName='" + venderName + '\'' +
+                "venderiId=" + vendorId +
+                ", venderName='" + vendorName + '\'' +
                 ", tenderId=" + tenderId +
                 ", tenderName='" + tenderName + '\'' +
                 ", tenderAmount=" + tenderAmount +
                 ", statusBid='" + statusBid + '\'' +
                 '}';
     }
-    public Status(){
+    public TenderStatus(){
 
     };
 
-    public Status(int venderiId, String venderName, int tenderId, String tenderName, int tenderAmount, String statusBid) {
-        this.venderiId = venderiId;
-        this.venderName = venderName;
+    public TenderStatus(int vendorId, String vendorName, int tenderId, String tenderName, int tenderAmount, String statusBid) {
+        this.vendorId = vendorId;
+        this.vendorName = vendorName;
         this.tenderId = tenderId;
         this.tenderName = tenderName;
         this.tenderAmount = tenderAmount;
@@ -34,19 +34,19 @@ public class Status {
     }
 
     public int getVenderiId() {
-        return venderiId;
+        return vendorId;
     }
 
     public void setVenderiId(int venderiId) {
-        this.venderiId = venderiId;
+        this.vendorId = venderiId;
     }
 
     public String getVenderName() {
-        return venderName;
+        return vendorName;
     }
 
     public void setVenderName(String venderName) {
-        this.venderName = venderName;
+        this.vendorName = venderName;
     }
 
     public int getTenderId() {
