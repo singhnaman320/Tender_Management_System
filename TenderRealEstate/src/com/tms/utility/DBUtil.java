@@ -3,6 +3,7 @@ package com.tms.utility;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ResourceBundle;
 
 public class DBUtil {
 
@@ -30,4 +31,5 @@ public class DBUtil {
 
         return connect;
     }
+
 }

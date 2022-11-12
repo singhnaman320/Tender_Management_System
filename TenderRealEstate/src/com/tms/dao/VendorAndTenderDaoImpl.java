@@ -340,42 +340,7 @@ public class VendorAndTenderDaoImpl implements VendorAndTenderDao{
         return allBids;
     }
 
-    // View Minimum Amount Tender Bid
-    @Override
-    public List<TenderBid> viewMinimumAmountTenderBid() throws TenderException {
-
-        List<TenderBid> minTender = new ArrayList<>();
-
-        try (Connection connect = DBUtil.provideConnection()) {
-
-            PreparedStatement ps = connect.prepareStatement(" select bid, btid, min(bamount) As Min_amount, status " +
-                    "from TenderBid group by btid");
-            ResultSet rs = ps.executeQuery();
-
-            while (rs.next()) {
-
-                int bid = rs.getInt("bid");
-                int btid = rs.getInt("btid");
-                int bamount= rs.getInt("bamount");
-                String status = rs.getString("status");
-
-                if (status.equals("Yes")) {
-
-                    minTender.add(new TenderBid(bid, btid, bamount, "Yet to be issued"));
-
-                } else {
-                    minTender.add(new TenderBid(bid, btid, bamount, "Already issued"));
-                }
-            }
-
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-        if (minTender.size() == 0) {
-            throw new TenderException("No Tender Bid Found");
-        }
-        return minTender;
-    }
+    // View Bid according to status
 
     @Override
     public List<TenderBid> showBidAccordingToStatus(String stat) throws TenderException {

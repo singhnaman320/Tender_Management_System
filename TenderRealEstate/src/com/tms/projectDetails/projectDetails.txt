@@ -1,7 +1,5 @@
-package com.tms.projectDetails;
 
 
-/*
 ================================= [] Tender Management System [] =======================================================
 
 Built by: Naman Kumar Singh_(fw19_0458)
@@ -44,7 +42,7 @@ The Role of a Vendor is:
 
 [] Tables []
 
-create table vendor(
+create table Vendor(
 	vid int primary key auto_increment,
 	vname varchar(15),
 	vemail varchar(20) unique,
@@ -53,29 +51,19 @@ create table vendor(
 	vaddress varchar(25)
 );
 
-create table tender(
+create table Tender(
 	tid int primary key auto_increment,
 	tname varchar(20) unique,
 	tdeadline date,
 	tamount int
 );
 
-create table bid(
+create table TenderBid(
 	bid int ,
 	btid int,
 	bamount int,
+	status varchar(10),
 	foreign key(bid) references vendor(vid),
 	foreign key(btid) references tender(tid)
 );
 
-create table bid_stat(
-	rid int,
-	tid int,
-	stat varchar(10),
-	foreign key(rid) references vendor(vid),
-	foreign key(tid) references tender(tid)
-);
-
- */
-public class ProjectDetails {
-}

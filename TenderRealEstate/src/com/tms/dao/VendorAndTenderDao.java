@@ -30,8 +30,6 @@ public interface VendorAndTenderDao {
 
     public List<TenderBid> ViewTenderBid() throws BidException;
 
-    public List<TenderBid> viewMinimumAmountTenderBid() throws TenderException; //=============================
-
     public List<TenderBid> showBidAccordingToStatus(String stat) throws TenderException;
 
     public String assignTenderToVendors(int bid, int btid) throws TenderException;
