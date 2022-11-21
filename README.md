@@ -11,8 +11,9 @@ Whenever a company  requires a service / merchandise , a tender is floated. Comp
 2. Vendor
 
 *********************************************************************************************************************************************************************
+[] Features Assigned:
 
-[] Role of Administrator : 
+[] For Administrator : 
 
 1. Login with his account.
 2. Register new Vendor. (assign a new username and password to him)
@@ -22,9 +23,7 @@ Whenever a company  requires a service / merchandise , a tender is floated. Comp
 6. View All the Bids of a tender.
 7. Assign tender to a vendor.
 
-*********************************************************************************************************************************************************************
-
-[] Role of a Vendor : 
+[] For Vendor : 
 
 1. Login with his account (username and password given by admin)
 1. View all the current Tenders.
