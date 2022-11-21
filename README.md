@@ -39,5 +39,9 @@ Whenever a company  requires a service / merchandise , a tender is floated. Comp
 
 [] ER-Diagram:
 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
+<img src="https://github.com/singhnaman320/capable-downtown-7255/blob/master/ER_Diagram-%20Tender%20Management%20System.png" alt="html5" width="100%" height="80%"/> 
+
+[] Flowchart:
+
+<img src="https://github.com/singhnaman320/capable-downtown-7255/blob/master/ER_Diagram-%20Tender%20Management%20System.png" alt="html5" width="100%" height="80%"/>
 
