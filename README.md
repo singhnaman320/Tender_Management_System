@@ -33,7 +33,10 @@ Whenever a company  requires a service / merchandise , a tender is floated. Comp
 4. View his own Bid History.
 
 *********************************************************************************************************************************************************************
+[] Tech Stack Used:
 
+1. JAVA
+2. MySQL
 
 
 
