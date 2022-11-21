@@ -37,5 +37,7 @@ Whenever a company  requires a service / merchandise , a tender is floated. Comp
 1. JAVA
 2. MySQL
 
+[] ER-Diagram:
 
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
 
